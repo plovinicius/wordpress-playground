@@ -19,10 +19,14 @@ get_header();
 	if ( have_posts() ) {
 
 		while ( have_posts() ) {
-			the_post();
+			the_post(); ?>
 
-			get_template_part( 'template-parts/content', get_post_type() );
-		}
+            <div style="width: 100%; max-width: 800px; margin: 140px auto 40px;">
+                <?php echo do_shortcode('[contact-form-7 id="19" title="Formulário de contato 1"]'); ?>
+            </div>
+
+            <!--get_template_part( 'template-parts/content', get_post_type() );-->
+		<?php }
 	}
 
 	?>

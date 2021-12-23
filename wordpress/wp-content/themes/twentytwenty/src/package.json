@@ -1,0 +1,17 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^27.4.5",
+    "jest-puppeteer": "^6.0.3",
+    "jest-puppeteer-preset": "^6.0.3"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "puppeteer": "^13.0.1"
+  }
+}
